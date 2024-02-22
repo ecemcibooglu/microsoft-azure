@@ -1,0 +1,356 @@
+.header {
+  background-image: url("../azure-image/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.banner{
+  background-image: url("../azure-image/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.microsoft-dark-bg {
+  background-color: #17253D;
+}
+
+.scale {
+  transition: all 0.2s ease-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
+body, h1, h2, h3, h4, h6 {
+  color: #17253D;
+}
+
+.text-21 {
+font-size: 21px;
+}
+
+.bg-form {
+  background-color: #0067B8;
+}
+
+.microsoft-btn {
+  background-color: #0067B8 !important;
+  color: white !important;
+  border: 2px solid #0067B8 !important;
+  padding: 15px 25px !important;
+  align-self: center;
+  border-radius: 5px !important;
+}
+
+.microsoft-btn:hover {
+  background-color: transparent !important;
+  border: 2px solid #0067B8 !important;
+  color: #0067B8 !important;
+  border-radius: 5px !important;
+}
+
+.microsoft-link {
+color: #0067B8 !important;
+text-decoration: none!important;
+}
+
+.bi-download {
+  color: #0067B8 !important;
+}
+
+.microsoft-link:hover {
+color: #0067B8 !important;
+text-decoration: underline!important;
+}
+
+@media screen and (max-width: 992px) {
+.mb-mobile {
+    margin-bottom: 5%;
+  }
+.scale:hover {
+  transform: none;
+}
+.scale {
+  transition: none;
+}
+
+.desktop-only {
+    display: none;
+  }
+
+.mobile-only {
+    display: block;
+  }
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border: 1px solid white!important;
+}
+
+.hr1:after {
+background: #17253D;
+content: '1';
+padding: 7px 15px;
+position: relative;
+border-radius: 50%;
+border: 2px solid white!important;
+top: -13px;
+}
+
+.hr2:after {
+background: #17253D;
+content: '2';
+padding: 7px 15px;
+position: relative;
+border-radius: 50%;
+border: 2px solid white!important;
+top: -13px;
+transition: all .2s ease-in;
+transform: scale(1.2);
+}
+
+.hr3:after {
+background: #17253D;
+content: '3';
+padding: 7px 15px;
+position: relative;
+border-radius: 50%;
+border: 2px solid white!important;
+top: -13px;
+
+}
+
+/* Tabs */
+
+.bitmap {
+min-height: 100%;
+object-fit: contain;
+}
+
+.bitmap-tab {
+overflow: hidden;
+}
+
+.nav-tabs {
+  border-bottom: none !important;
+}
+
+.nav-link {
+border-top-width: 0px !important;
+border-right-width: 0px !important;
+border-left-width: 0px !important;
+}
+.nav-tabs .nav-link {
+width: 100%;
+color:#D8D8D8!important;
+font-size: 16px;
+min-height: 100%;
+background: transparent;
+border-bottom: 3px solid #D8D8D8;
+margin-bottom: 0px;
+font-weight:700;
+}
+
+.nav-tabs .nav-link.active {
+background: transparent;
+color: #17253D!important;
+border: none;
+border-bottom: 3px solid #17253D!important;
+  font-weight:700;
+}
+
+
+button:focus {
+outline: none !important;
+}
+
+.tab-content {
+display: flex;
+color: #17253D!important;
+}
+
+.tab-content > .tab-pane {
+display: flex;
+visibility: hidden;
+margin-right: -100%;
+width: 100%;
+background-color: transparent;
+}
+
+.tab-content > .active {
+visibility: visible;
+}
+
+/* keep tabs same height */
+
+.tab-content {
+display: flex;
+}
+
+.tab-content > .tab-pane {
+display: flex;
+visibility: hidden;
+margin-right: -100%;
+width: 100%;
+}
+
+.tab-content > .active {
+visibility: visible;
+}
+
+.card-body{
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
+.card-body p {
+color: #17253D!important;
+}
+
+.desktop-only {
+display: block;
+}
+
+.mobile-only {
+display: none;
+}
+
+@media screen and (max-width: 992px) {
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.mb-mobile {
+  margin-bottom: 5%;
+}
+
+.header {
+  background-position: 50% 100%;
+  }
+}
+/*Tabs End*/
+
+/* Form */
+
+form button {
+  margin-top: 1.5rem!important;
+  background-color: white!important;
+  color: #0067B8 !important;
+  border: 1px solid white!important;
+  padding: 10px 25px!important;
+  border-radius: 5px !important;
+}
+
+form button:hover {
+  margin-top: 1.5rem!important;
+  background-color: transparent!important;
+  color:  white!important;
+  border: 1px solid white!important;
+  padding: 10px 25px!important; 
+  border-radius: 5px !important;
+}
+
+/* Form */
+
+form label {
+  display: none;
+}
+
+form label[for="fieldinformation"] {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+form input[type="checkbox"] {
+  width: 2%;
+}
+
+form input::placeholder, form textarea::placeholder {
+color:#000;
+}
+
+form input:focus {
+  border: 1px solid #f7f7f7;
+  background: #fff;
+  outline: 0;
+}
+
+form input, form input:hover, #fieldphone {
+  margin: 0.5rem 0 !important;
+  border: 1px solid white !important;
+  padding: 0 20px !important;
+  background: #fff !important;
+}
+
+form input:not([type="checkbox"]) {
+  width: 97%;
+  height: 45px;
+}
+
+.fieldvendor_opt_in.checkbox, .fieldreseller_opt_in.checkbox {
+width:100%;
+}
+
+form input[type="checkbox"] {
+  margin-top: 1rem;
+}
+
+.fieldinformation.checkbox {
+  margin-bottom: 2rem;
+}
+
+.checkbox label {
+  display: inline;
+}
+
+.fieldapplication_area label[for="fieldapplication_area"] {
+  width: 100%;
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text,
+.email, .phone{
+  width: 48%;
+}
+
+.fieldlast_name, .fieldcompany_name, .fieldphone {
+margin-left: auto;
+}
+
+@media screen and (max-width: 992px) {
+.form-check-subline {
+width: 100%
+}
+
+.col-container .form-check-inline {
+display: flex; 
+flex-wrap: wrap;
+}
+
+form > div {
+ display: inline!important;
+  width: 100%!important;
+}
+
+.form-flex-wrap {
+  display: inline-grid!important;
+}
+
+form label {
+  width: 400px;
+}
+}
